@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 @Database(entities = {Book.class}, version = 1, exportSchema = false)
 public abstract class BookDatabase extends RoomDatabase {
     public abstract BookDao bookDao();
-
+//xd test
     private static volatile BookDatabase INSTANCE;
     public static final int NUMBER_OF_THREADS = 4;
     static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
